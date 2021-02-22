@@ -1,6 +1,6 @@
 {
   "name": "use-permission",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple React hook for interacting with browser Permissions API",
   "main": "cjs/index.js",
   "module": "es/index.js",
