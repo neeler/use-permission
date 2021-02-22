@@ -1,19 +1,29 @@
 {
   "name": "use-permission",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Simple React hook for interacting with browser Permissions API",
-  "module": "index.js",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build:cjs": "NODE_ENV=cjs npx babel src --out-dir cjs",
+    "build:es": "NODE_ENV=es npx babel src --out-dir es",
+    "prepare": "npm run build:cjs && npm run build:es"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neeler/use-permission.git"
   },
   "keywords": [
+    "use",
     "react",
     "hooks",
+    "react-hooks",
     "browser",
     "navigator",
     "permissions",
-    "use-permission"
+    "permissions hook",
+    "use-permission",
+    "use-permissions"
   ],
   "author": "neeler",
   "license": "ISC",
@@ -22,6 +32,11 @@
   },
   "homepage": "https://github.com/neeler/use-permission#readme",
   "devDependencies": {
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "babel-preset-minify": "^0.5.1",
     "prettier": "^2.2.1",
     "react": "^17.0.1"
   },

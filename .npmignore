@@ -7,9 +7,6 @@
 # dependencies
 /node_modules
 
-# build
-/cjs
-/es
-
-# misc
-.DS_Store
+# source
+.babelrc
+/src
