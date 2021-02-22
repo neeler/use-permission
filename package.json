@@ -1,0 +1,35 @@
+{
+  "name": "use-permission",
+  "version": "1.0.0",
+  "description": "Simple React hook for interacting with browser Permissions API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neeler/use-permission.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "browser",
+    "navigator",
+    "permissions",
+    "use-permission"
+  ],
+  "author": "neeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neeler/use-permission/issues"
+  },
+  "homepage": "https://github.com/neeler/use-permission#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "react": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4
+  }
+}
