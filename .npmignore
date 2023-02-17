@@ -7,6 +7,12 @@
 # dependencies
 /node_modules
 
+# testing
+/coverage
+
 # source
-.babelrc
 /src
+
+# misc
+.DS_Store
+*.pem

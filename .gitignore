@@ -7,9 +7,13 @@
 # dependencies
 /node_modules
 
-# build
-/cjs
-/es
+# testing
+/coverage
+
+# production
+/build
+/dist
 
 # misc
 .DS_Store
+*.pem

@@ -25,9 +25,3 @@ function Component() {
     return <>...</>;
 }
 ```
-
-## Safari users
-
-¯\_(ツ)_/¯
-
-https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query#browser_compatibility
