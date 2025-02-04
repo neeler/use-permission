@@ -1,6 +1,6 @@
 {
     "name": "use-permission",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "description": "Simple React hook for interacting with browser Permissions API",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
