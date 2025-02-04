@@ -1,12 +1,13 @@
 import { useState, useEffect, useCallback } from 'react';
+import { PermissionType } from './PermissionType';
 import { UsePermissionStatus } from './UsePermissionStatus';
 
 export interface UsePermissionQuery {
     /**
      * The name of the API whose permissions you want to query.
-     * Each browser supports a different set of values.
+     * WARNING: Each browser supports a different set of values.
      */
-    name: PermissionName;
+    name: PermissionType;
     /**
      * (Push only, not supported in Firefox)
      * Indicates whether you want to show a notification for every message or be able to send silent push notifications.
@@ -50,6 +51,7 @@ export function usePermission({
                     try {
                         const permissionStatus =
                             await navigator.permissions.query({
+                                // @ts-ignore - Valid set of permissions is different for each browser.
                                 name,
                                 // @ts-ignore - This is not supported in Firefox.
                                 userVisibleOnly,
